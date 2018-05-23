@@ -1,0 +1,38 @@
+DOM: Document Object Model
+    - A structured representation of an HTML document
+    - The DOM is used to connect webpages to scripts like JS
+    - For each HTML box, there is an object in the DOM that we can access and interact with
+    
+**JAVASCRIPT and DOM are two different things!**
+
+    - HTML content is stored in the DOM
+    - In JS, the object that gives us access to the DOM is "document"
+    - document.querySelector('#some-id') selects the element
+    - document.querySelector('#some-id').textContent = "something"  to change text in the HTML doc
+    - document.querySelector('#some-id').innerHTML = "something"  to add HTML content
+    - document.querySelector('.some-class').style.display = 'none'   to change display
+    
+    
+EVENTS: notifications that are sent to notify the code that something happened on the webpage.
+    - Clicking buttons, resizing window, scrolling down or pressing a key
+
+EVENT LISTENER: Function performing an action based on a certain event, waits for specfic events to happen.
+    - Follows execution stack (returns executions in order)
+    - Message queue contains events in the browser, goes once execution stack is empty
+    - Event listeners get their own execution stack
+    - document.querySelector('.some-class').addEventListener('eventType', 'someFunction')
+
+CALLBACK FUNCTION: a function that is called by another function. 
+    - Callback functions are passed into other functions as arguments.
+    
+ANONYMOUS FUNCTION: a function that does not have a name, so it cannot be reused.
+    - function() {
+    //do something here
+    };
+    
+    
+TYPE COERSION:
+    - Undefined, 0, null or " " are COERCED to false
+    
+    
+    
